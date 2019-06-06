@@ -1,0 +1,10 @@
+basic_salery = 1500 #基本工资
+bonus_rate = 200 #每卖出一台相机获得200元
+commission_rate = 0.02 #获得相机售价的0.02作为佣金
+numberofcamera = int(input("请输入售出相机数量："))
+price = float(input("请输入相机的销售单价："))
+bonus = (bonus_rate * numberofcamera)
+commission =(commission_rate * numberofcamera * price)
+print("	相机卖出提成={:6.2f}".format(bonus))
+print("	获得的相机佣金收益={:6.2f}".format(commission))
+print("	本月获得的工资={:6.2f}".format(bonus+commission+basic_salery))
